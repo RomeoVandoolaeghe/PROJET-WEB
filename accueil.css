@@ -1,0 +1,194 @@
+
+/* body */
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: white;
+}
+
+
+/*section header*/
+
+header{
+    height: 150px; /*  */
+    background-color: #212529; /*  */
+    padding: 0; /*  */
+    margin: 0; /*  */
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 100%;
+    place-items: center;
+    
+}
+
+#logo-header{
+
+    height: 80%;
+    filter: grayscale(70%);
+    border-radius: 7%;
+    
+}
+
+
+
+.bouton-header {
+    text-decoration: none;
+    color: rgb(192, 192, 192);   
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 120% ;
+    padding: 30px;
+    
+    background-color: #495057;
+    border-radius:7%;
+    transition: transform .1s;
+    
+    
+
+}
+
+
+
+
+.bouton-header:hover{
+
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    box-shadow: 0px 0px 30px  #ced4da4d;
+}
+
+
+/*section image*/
+
+.images{
+    background-image: url(images/losc.png); /* image de fond de la section images  */
+    background-size: cover;/* l'image couvre toute la section */
+    background-repeat: no-repeat;/* l'image ne se rèpète pas */
+    background-position: center;/* l'image de fond est centré par rapport à la section */
+    height: 500px;/*  */
+    border-style: solid;/*  */
+    border-color: #CED4DA;/*  */
+    border-width: 10px;/*  */
+    filter: grayscale(100%);/*  */
+    display: grid;/*  */
+    grid-template-columns: 100%;
+    place-items: center;
+    /*  */
+    /*  */
+
+}
+
+.title{
+    color: white;
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    -webkit-animation: fadein 3s; /* Safari et Chrome */
+
+}
+
+
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+
+/* section infos */
+
+
+.infos{
+    background-color: #212529;
+    height: 900px;
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 50px 1fr 50px;
+    grid-template-rows: 50px 1fr 1fr 50px;
+
+}
+
+.resultat{
+    box-shadow: 0px 0px 20px  #ced4da4d;
+    border-radius: 20px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-rows: repeat(6,auto);
+    
+}
+
+.resultat h1{
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    
+}
+
+.classement{
+    box-shadow: 0px 0px 20px  #ced4da4d;
+    border-radius: 20px;
+    grid-column-start: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-rows: repeat(21,auto);
+}
+
+.classement h1{
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+
+    
+}
+
+.classement .ligne{
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: 30% 30% 40% ;
+    place-items: center;
+    padding: 5px;
+
+}
+
+.classement h2{
+    margin: 0;
+    font-size: 15px;
+}
+
+
+
+.t1, .t2{
+     
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    background-color: #495057;
+    border-radius: 20px 20px 0px 0px;
+    
+}
+
+
+.result{
+    display: grid;
+    place-items: center;
+    border-style: solid;
+    border-color: #343a40;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+
